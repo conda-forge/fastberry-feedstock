@@ -1,5 +1,5 @@
 {% set name = "fastberry" %}
-{% set version = "0.0.68" %}
+{% set version = "0.0.73" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fastberry-{{ version }}.tar.gz
-  sha256: f95bea0f3500202444e2c306fe6700c0a98f0401bfe1774637800831a5d63e8e
+  sha256: 4f49a7ac81515eeabe2ef29b8ef5d16eb66b075628c6bce6bfc79164ad823ace
 
 build:
   noarch: python
@@ -23,11 +23,11 @@ requirements:
     - python >=3.10
   run:
     - click >=8.1.3
-    - fastapi >=0.79.0
+    - fastapi >=0.88.0
     - pre-commit >=2.20.0
     - python >=3.10
     - spoc >=0.1.5
-    - strawberry-graphql >=0.125.0
+    - strawberry-graphql >=0.146.0
     - uvicorn >=0.18.3
 
 test:
