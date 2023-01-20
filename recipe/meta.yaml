@@ -1,5 +1,5 @@
 {% set name = "fastberry" %}
-{% set version = "0.0.73" %}
+{% set version = "0.0.74" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fastberry-{{ version }}.tar.gz
-  sha256: 4f49a7ac81515eeabe2ef29b8ef5d16eb66b075628c6bce6bfc79164ad823ace
+  sha256: f5bda0d91714f518c3f43dbffc5c53c1f426f37e2205d2f311b761ec320d4e60
 
 build:
   noarch: python
