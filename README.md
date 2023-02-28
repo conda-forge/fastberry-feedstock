@@ -1,11 +1,11 @@
-About fastberry
-===============
+About fastberry-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fastberry-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hlop3z/fastberry
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fastberry-feedstock/blob/main/LICENSE.txt)
 
 Summary: GraphQL Made Easy
 
