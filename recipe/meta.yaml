@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "fastberry" %}
-{% set version = "0.0.80" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastberry-{{ version }}.tar.gz
-  sha256: bafa0655905c822e934e981ba109684e6185def753f2b6997348fc8526ec1a41
+  sha256: b9bb69736861f330a15a21a7f46541a06522b41e33608c40a2d557ac40792147
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - startproject = fastberry.scripts.start_project:cli
 
