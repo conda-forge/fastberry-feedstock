@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "fastberry" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastberry-{{ version }}.tar.gz
-  sha256: 577ecad08b82fc022775f0449cacbcb7e43a3dc7cd30a9044e2ff1f59103cc6d
+  sha256: b9bb69736861f330a15a21a7f46541a06522b41e33608c40a2d557ac40792147
 
 build:
   noarch: python
@@ -38,9 +38,8 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/hlop3z/fastberry
-  doc_url: https://hlop3z.github.io/fastberry/
-  summary: GraphQL Made Easy
+  home: https://github.com/davidsarosi92/fastberry
+  summary: Performance helpers for read-heavy Python web APIs, on both GraphQL and REST.
   license: MIT
   license_file: LICENSE
 
