@@ -19,17 +19,14 @@ build:
 
 requirements:
   host:
-    - pdm-pep517 >=1.0.0
     - pip
     - python {{ python_min }}
+    - hatchling
+    - hatch-vcs
   run:
-    - click >=8.1.3
-    - fastapi >=0.88.0
-    - pre-commit >=2.20.0
     - python >={{ python_min }}
-    - spoc >=0.1.5
-    - strawberry-graphql >=0.146.0
-    - uvicorn >=0.18.3
+    - strawberry-graphql >=0.200
+    - django >=4.2
 
 test:
   imports:
