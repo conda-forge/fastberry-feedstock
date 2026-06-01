@@ -1,6 +1,5 @@
-{% set python_min = "3.10" %}
 {% set name = "fastberry" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fastberry-{{ version }}.tar.gz
-  sha256: b9bb69736861f330a15a21a7f46541a06522b41e33608c40a2d557ac40792147
+  sha256: 3e5418609b8ad4334bbeb5afa5e6c51f36d218e40c2ac7ead10a0c3414362a0f
 
 build:
   noarch: python
@@ -25,8 +24,6 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - strawberry-graphql >=0.200
-    - django >=4.2
 
 test:
   imports:
