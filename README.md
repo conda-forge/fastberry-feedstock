@@ -3,13 +3,11 @@ About fastberry-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fastberry-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/hlop3z/fastberry
+Home: https://github.com/davidsarosi92/fastberry
 
 Package license: MIT
 
-Summary: GraphQL Made Easy
-
-Documentation: https://hlop3z.github.io/fastberry/
+Summary: Performance helpers for read-heavy Python web APIs, on both GraphQL and REST.
 
 Current build status
 ====================
