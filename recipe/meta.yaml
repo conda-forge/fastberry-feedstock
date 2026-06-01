@@ -24,8 +24,6 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - strawberry-graphql >=0.200
-    - django >=4.2
 
 test:
   imports:
