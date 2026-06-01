@@ -1,4 +1,3 @@
-{% set python_min = "3.10" %}
 {% set name = "fastberry" %}
 {% set version = "0.3.0" %}
 
@@ -19,17 +18,14 @@ build:
 
 requirements:
   host:
-    - pdm-pep517 >=1.0.0
     - pip
     - python {{ python_min }}
+    - hatchling
+    - hatch-vcs
   run:
-    - click >=8.1.3
-    - fastapi >=0.88.0
-    - pre-commit >=2.20.0
     - python >={{ python_min }}
-    - spoc >=0.1.5
-    - strawberry-graphql >=0.146.0
-    - uvicorn >=0.18.3
+    - strawberry-graphql >=0.200
+    - django >=4.2
 
 test:
   imports:
@@ -41,9 +37,8 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/hlop3z/fastberry
-  doc_url: https://hlop3z.github.io/fastberry/
-  summary: GraphQL Made Easy
+  home: https://github.com/davidsarosi92/fastberry
+  summary: Performance helpers for read-heavy Python web APIs, on both GraphQL and REST.
   license: MIT
   license_file: LICENSE
 
