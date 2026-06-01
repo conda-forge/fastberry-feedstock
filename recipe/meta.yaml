@@ -38,9 +38,8 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/hlop3z/fastberry
-  doc_url: https://hlop3z.github.io/fastberry/
-  summary: GraphQL Made Easy
+  home: https://github.com/davidsarosi92/fastberry
+  summary: Performance helpers for read-heavy Python web APIs, on both GraphQL and REST.
   license: MIT
   license_file: LICENSE
 
