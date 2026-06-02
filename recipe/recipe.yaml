@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  name: fastberry
+  version: "0.3.1"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fastberry-${{ version }}.tar.gz
+  sha256: 9122a0419b867408914cd3135785568660ca51cf02bde322d4aea5fe409c71ac
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - startproject = fastberry.scripts.start_project:cli
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - hatchling
+    - hatch-vcs
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - fastberry
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Performance helpers for read-heavy Python web APIs, on both GraphQL and REST.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/davidsarosi92/fastberry
+
+extra:
+  recipe-maintainers:
+    - thewchan
