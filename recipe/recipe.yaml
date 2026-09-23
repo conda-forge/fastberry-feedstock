@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fastberry
-  version: "0.4.0"
+  version: "0.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fastberry-${{ version }}.tar.gz
-  sha256: 6d81280ac292f25230b1989544557a9eec4aeb9750cdb5d9d108b8ca5e844f03
+  sha256: a99a85b97f6abc7120a2a3da72790e671b2aa42f69c1ba99dde942c374fbde5d
 
 build:
   number: 0
